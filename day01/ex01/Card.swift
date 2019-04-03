@@ -1,3 +1,5 @@
+import Foundation
+
 class Card: NSObject {
     var color: Color
     var value: Value
