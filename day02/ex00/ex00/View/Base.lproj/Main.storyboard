@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fKs-9T-50m">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Death Note-->
+        <scene sceneID="ysk-t2-4Hc">
+            <objects>
+                <tableViewController id="x7e-ac-PYp" customClass="DeathNoteViewController" customModule="ex00" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="qaL-Ui-VKV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="deathNoteInfoCell" rowHeight="89" id="cVT-a5-2ae" customClass="DeathNoteTableViewCell" customModule="ex00" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="89"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cVT-a5-2ae" id="mUA-br-23H">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="89"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCb-B8-o8G">
+                                            <rect key="frame" x="16" y="16" width="86" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Death time" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ima-XH-HBo">
+                                            <rect key="frame" x="310.5" y="16" width="87.5" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Death info" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qtI-2t-JiV">
+                                            <rect key="frame" x="16" y="52.5" width="382" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="ima-XH-HBo" secondAttribute="trailing" constant="16" id="0le-US-DcL"/>
+                                        <constraint firstItem="QCb-B8-o8G" firstAttribute="top" secondItem="mUA-br-23H" secondAttribute="top" constant="16" id="2sJ-cu-Bi2"/>
+                                        <constraint firstItem="ima-XH-HBo" firstAttribute="leading" relation="lessThanOrEqual" secondItem="mUA-br-23H" secondAttribute="leading" constant="310.5" id="4zP-mU-sDW"/>
+                                        <constraint firstItem="qtI-2t-JiV" firstAttribute="top" secondItem="mUA-br-23H" secondAttribute="top" constant="52.5" id="9YG-iB-log"/>
+                                        <constraint firstItem="qtI-2t-JiV" firstAttribute="leading" secondItem="mUA-br-23H" secondAttribute="leading" constant="16" id="Osl-y5-Ln1"/>
+                                        <constraint firstItem="ima-XH-HBo" firstAttribute="top" secondItem="mUA-br-23H" secondAttribute="top" constant="16" id="SFj-XM-zbh"/>
+                                        <constraint firstItem="QCb-B8-o8G" firstAttribute="leading" secondItem="mUA-br-23H" secondAttribute="leading" constant="16" id="eEa-EK-gle"/>
+                                        <constraint firstAttribute="trailing" secondItem="qtI-2t-JiV" secondAttribute="trailing" constant="16" id="olU-iJ-4aK"/>
+                                        <constraint firstAttribute="bottom" secondItem="qtI-2t-JiV" secondAttribute="bottom" constant="16" id="xAK-of-IBf"/>
+                                        <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="QCb-B8-o8G" secondAttribute="trailing" constant="312" id="zRI-iu-cmd"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="deathInfo" destination="qtI-2t-JiV" id="oMn-7T-eag"/>
+                                    <outlet property="deathName" destination="QCb-B8-o8G" id="kiq-91-pqC"/>
+                                    <outlet property="deathTime" destination="ima-XH-HBo" id="ke5-Xz-cbv"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="x7e-ac-PYp" id="iGK-my-kKp"/>
+                            <outlet property="delegate" destination="x7e-ac-PYp" id="Vhl-9i-UtF"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Death Note" id="98M-yw-3AG">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="sG7-GD-OOS">
+                            <connections>
+                                <segue destination="vN0-Al-8Ge" kind="show" id="wPZ-It-Lgo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UgA-ok-Nxa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-717.39130434782612" y="34.821428571428569"/>
+        </scene>
+        <!--Add a person-->
+        <scene sceneID="G0b-Po-kuy">
+            <objects>
+                <viewController id="vN0-Al-8Ge" customClass="AddNewCellViewController" customModule="ex00" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0H6-0X-Rg4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ekq-1Q-5I3">
+                                <rect key="frame" x="16" y="264" width="382" height="216"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <date key="date" timeIntervalSinceReferenceDate="576085819.36488903">
+                                    <!--2019-04-04 15:50:19 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="ru"/>
+                            </datePicker>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tVB-mO-fnX">
+                                <rect key="frame" x="16" y="156" width="382" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="editingChanged:" destination="vN0-Al-8Ge" eventType="editingDidEnd" id="PJA-gM-xot"/>
+                                    <action selector="editingChanged:" destination="vN0-Al-8Ge" eventType="editingChanged" id="as7-r0-qmM"/>
+                                </connections>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Type here how he will die" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ddc-0X-sfa">
+                                <rect key="frame" x="16" y="520" width="382" height="285"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tVB-mO-fnX" firstAttribute="top" secondItem="5UE-uX-W1t" secondAttribute="top" constant="16" id="092-Xr-dMm"/>
+                            <constraint firstItem="5UE-uX-W1t" firstAttribute="trailing" secondItem="ekq-1Q-5I3" secondAttribute="trailing" constant="16" id="Fr3-iW-Cjn"/>
+                            <constraint firstItem="ddc-0X-sfa" firstAttribute="top" secondItem="ekq-1Q-5I3" secondAttribute="bottom" constant="40" id="G1p-uj-xAL"/>
+                            <constraint firstItem="ddc-0X-sfa" firstAttribute="leading" secondItem="5UE-uX-W1t" secondAttribute="leading" constant="16" id="Knx-HD-qi4"/>
+                            <constraint firstItem="5UE-uX-W1t" firstAttribute="trailing" secondItem="tVB-mO-fnX" secondAttribute="trailing" constant="16" id="LPp-v8-mFO"/>
+                            <constraint firstItem="ekq-1Q-5I3" firstAttribute="leading" secondItem="5UE-uX-W1t" secondAttribute="leading" constant="16" id="X2x-yS-MI9"/>
+                            <constraint firstItem="5UE-uX-W1t" firstAttribute="trailing" secondItem="ddc-0X-sfa" secondAttribute="trailing" constant="16" id="dDN-Mx-Fp0"/>
+                            <constraint firstItem="tVB-mO-fnX" firstAttribute="leading" secondItem="5UE-uX-W1t" secondAttribute="leading" constant="16" id="gR6-Am-zHd"/>
+                            <constraint firstItem="5UE-uX-W1t" firstAttribute="bottom" secondItem="ddc-0X-sfa" secondAttribute="bottom" constant="8" id="nHS-rl-Cb4"/>
+                            <constraint firstItem="ekq-1Q-5I3" firstAttribute="top" secondItem="tVB-mO-fnX" secondAttribute="bottom" constant="78" id="ucu-qA-2sF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5UE-uX-W1t"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Add a person" id="AVV-TC-JfX">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="eI6-SM-mKx">
+                            <connections>
+                                <action selector="doneButton:" destination="vN0-Al-8Ge" id="m1d-CP-JhO"/>
+                                <segue destination="GX1-qi-RvP" kind="unwind" unwindAction="unWindToHomeVCWithSegue:" id="ilP-az-kBh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="datePicker" destination="ekq-1Q-5I3" id="kZW-2U-7Fj"/>
+                        <outlet property="nameField" destination="tVB-mO-fnX" id="MWY-Oq-R5q"/>
+                        <outlet property="saveButton" destination="eI6-SM-mKx" id="uyE-mr-2rV"/>
+                        <outlet property="textField" destination="ddc-0X-sfa" id="B1S-Gm-Y87"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ysM-yc-Ab0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="GX1-qi-RvP" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="273.91304347826087" y="34.821428571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Oel-Qg-dzr">
+            <objects>
+                <navigationController id="fKs-9T-50m" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="KOv-ff-oFm">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="x7e-ac-PYp" kind="relationship" relationship="rootViewController" id="9dA-e9-kqK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GtK-QQ-P1V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1636" y="35"/>
+        </scene>
+    </scenes>
+</document>

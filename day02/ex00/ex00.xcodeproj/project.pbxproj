@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		9055E07A22552721005B5EA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9055E07922552721005B5EA2 /* AppDelegate.swift */; };
-		9055E07C22552721005B5EA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9055E07B22552721005B5EA2 /* ViewController.swift */; };
 		9055E07F22552721005B5EA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9055E07D22552721005B5EA2 /* Main.storyboard */; };
 		9055E08122552722005B5EA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9055E08022552722005B5EA2 /* Assets.xcassets */; };
 		9055E08422552722005B5EA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9055E08222552722005B5EA2 /* LaunchScreen.storyboard */; };
+		9055E0AA2256251C005B5EA2 /* DeathNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9055E0A92256251C005B5EA2 /* DeathNoteViewController.swift */; };
+		9055E0AC225629A9005B5EA2 /* DeathNoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9055E0AB225629A9005B5EA2 /* DeathNoteTableViewCell.swift */; };
+		9055E0B122562A0C005B5EA2 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9055E0B022562A0C005B5EA2 /* Data.swift */; };
+		9055E0B322564DDB005B5EA2 /* AddNewCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9055E0B222564DDB005B5EA2 /* AddNewCellViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9055E07622552721005B5EA2 /* ex00.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ex00.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9055E07922552721005B5EA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9055E07B22552721005B5EA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9055E07E22552721005B5EA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9055E08022552722005B5EA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9055E08322552722005B5EA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9055E08522552722005B5EA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9055E0A92256251C005B5EA2 /* DeathNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeathNoteViewController.swift; sourceTree = "<group>"; };
+		9055E0AB225629A9005B5EA2 /* DeathNoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeathNoteTableViewCell.swift; sourceTree = "<group>"; };
+		9055E0B022562A0C005B5EA2 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		9055E0B222564DDB005B5EA2 /* AddNewCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCellViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +61,40 @@
 			isa = PBXGroup;
 			children = (
 				9055E07922552721005B5EA2 /* AppDelegate.swift */,
-				9055E07B22552721005B5EA2 /* ViewController.swift */,
-				9055E07D22552721005B5EA2 /* Main.storyboard */,
+				9055E0AF225629FF005B5EA2 /* Model */,
+				9055E0AD225629CE005B5EA2 /* View */,
+				9055E0AE225629E8005B5EA2 /* Controller */,
 				9055E08022552722005B5EA2 /* Assets.xcassets */,
 				9055E08222552722005B5EA2 /* LaunchScreen.storyboard */,
 				9055E08522552722005B5EA2 /* Info.plist */,
 			);
 			path = ex00;
+			sourceTree = "<group>";
+		};
+		9055E0AD225629CE005B5EA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9055E07D22552721005B5EA2 /* Main.storyboard */,
+				9055E0AB225629A9005B5EA2 /* DeathNoteTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9055E0AE225629E8005B5EA2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9055E0A92256251C005B5EA2 /* DeathNoteViewController.swift */,
+				9055E0B222564DDB005B5EA2 /* AddNewCellViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9055E0AF225629FF005B5EA2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9055E0B022562A0C005B5EA2 /* Data.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9055E07C22552721005B5EA2 /* ViewController.swift in Sources */,
+				9055E0AC225629A9005B5EA2 /* DeathNoteTableViewCell.swift in Sources */,
+				9055E0AA2256251C005B5EA2 /* DeathNoteViewController.swift in Sources */,
 				9055E07A22552721005B5EA2 /* AppDelegate.swift in Sources */,
+				9055E0B122562A0C005B5EA2 /* Data.swift in Sources */,
+				9055E0B322564DDB005B5EA2 /* AddNewCellViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49Y6L4T525;
 				INFOPLIST_FILE = ex00/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +340,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49Y6L4T525;
 				INFOPLIST_FILE = ex00/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
