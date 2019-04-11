@@ -10,8 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let CUSTOMER_KEY = ""
-    let CUSTOMER_SECRET = ""
+    let CUSTOMER_KEY = "Xl6SmVJc5YzDDGufYMeT53e8U"
+    let CUSTOMER_SECRET = "sYgJKZ8mLuluk7d59i0GdMVPxRpjUiE14PCWuzdV3U94Z3pzFa"
     
     var apiController: APIController?
     var tweetsData: [Tweet] = []
