@@ -1,0 +1,33 @@
+PODS:
+  - Alamofire (4.8.2)
+  - DarkSkyKit (0.0.6):
+    - Alamofire (~> 4.0)
+  - MessageKit (1.0.0)
+  - ObjectMapper (3.4.2)
+  - RecastAI (3.5.0):
+    - Alamofire
+    - ObjectMapper
+
+DEPENDENCIES:
+  - DarkSkyKit
+  - MessageKit (~> 1.0)
+  - RecastAI (~> 3.5.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - DarkSkyKit
+    - MessageKit
+    - ObjectMapper
+    - RecastAI
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  DarkSkyKit: ae500687161b11e1f352cdf261ff620fe3837cf5
+  MessageKit: 16160036b16476b04bd0e9f2c7ce67e662e503e4
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  RecastAI: d9abaf97f914a07cc10ee0cb8be89bfe2b942280
+
+PODFILE CHECKSUM: 17abfe51ef597e5c205b7f712d6d130e592c4bfb
+
+COCOAPODS: 1.6.1
