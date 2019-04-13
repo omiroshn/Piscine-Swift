@@ -1,0 +1,16 @@
+PODS:
+  - omiroshn2019 (0.1.0)
+
+DEPENDENCIES:
+  - omiroshn2019 (from `../`)
+
+EXTERNAL SOURCES:
+  omiroshn2019:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  omiroshn2019: a9b1b0ad98c3927a6af2600411ad11749da7a7d5
+
+PODFILE CHECKSUM: a3a2385084df489dded8ec6bc7b711cd6565a545
+
+COCOAPODS: 1.6.1

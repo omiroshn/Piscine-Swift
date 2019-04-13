@@ -1,0 +1,6 @@
+framework module Pods_omiroshn2019_Tests {
+  umbrella header "Pods-omiroshn2019_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
