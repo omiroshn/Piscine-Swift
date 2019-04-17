@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f9j-d8-682">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="rush01_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="65o-gQ-drT">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="BQn-mW-t5I"/>
+                                </connections>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UzH-GR-uMl">
+                                <rect key="frame" x="16" y="597" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="nDD-en-Jwe"/>
+                                    <constraint firstAttribute="height" constant="50" id="vga-QI-Rk9"/>
+                                </constraints>
+                                <state key="normal" title="Geolocation" image="findme"/>
+                                <connections>
+                                    <action selector="findMeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NMK-X2-Y9d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WdC-7S-uGM">
+                                <rect key="frame" x="309" y="597" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hxe-l0-Pmd"/>
+                                    <constraint firstAttribute="width" constant="50" id="sZf-3i-dul"/>
+                                </constraints>
+                                <state key="normal" title="Go" image="gobtn"/>
+                                <connections>
+                                    <action selector="createPathOnFirstView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1SJ-Jv-Ybk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L7F-QH-zJk">
+                                <rect key="frame" x="240" y="597" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="BTN-0Y-zNb"/>
+                                    <constraint firstAttribute="height" constant="50" id="Yp3-T7-icx"/>
+                                </constraints>
+                                <state key="normal" title="Distance" image="test-1"/>
+                                <connections>
+                                    <action selector="findRouteAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t75-DF-mYo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UzH-GR-uMl" secondAttribute="bottom" constant="20" id="3SU-W4-HMp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WdC-7S-uGM" secondAttribute="bottom" constant="20" id="DLa-BB-Ofh"/>
+                            <constraint firstItem="65o-gQ-drT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KiF-28-Mjx"/>
+                            <constraint firstItem="65o-gQ-drT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="N9J-hu-TKI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WdC-7S-uGM" secondAttribute="trailing" constant="16" id="SKx-Dq-01F"/>
+                            <constraint firstItem="65o-gQ-drT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="UEp-MU-igZ"/>
+                            <constraint firstItem="WdC-7S-uGM" firstAttribute="leading" secondItem="L7F-QH-zJk" secondAttribute="trailing" constant="19" id="c1k-CF-S7b"/>
+                            <constraint firstItem="65o-gQ-drT" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="duQ-xk-vg6"/>
+                            <constraint firstItem="UzH-GR-uMl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="vnp-yv-F4l"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="L7F-QH-zJk" secondAttribute="bottom" constant="20" id="yLZ-NU-D9v"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Search" id="LTy-gq-tJ2">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="4a9-FR-GqV">
+                            <connections>
+                                <action selector="searchView:" destination="BYZ-38-t0r" id="ey7-uV-Ti6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="65o-gQ-drT" id="9ff-7a-p7C"/>
+                        <segue destination="SdD-a7-hL5" kind="presentation" identifier="showSearch" id="Mv3-df-HDz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="456.80000000000001" y="118.29085457271366"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="AhE-mU-XL5">
+            <objects>
+                <viewController id="SdD-a7-hL5" customClass="SecondViewController" customModule="rush01_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nsy-fi-Ion">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Departure" translatesAutoresizingMaskIntoConstraints="NO" id="hAo-LN-yrt">
+                                <rect key="frame" x="0.0" y="20" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits" textContentType="location"/>
+                            </searchBar>
+                            <searchBar contentMode="redraw" placeholder="Destination" translatesAutoresizingMaskIntoConstraints="NO" id="D33-X5-Tri">
+                                <rect key="frame" x="0.0" y="76" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits" textContentType="location"/>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITa-7r-o8M">
+                                <rect key="frame" x="285" y="140" width="74" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1jh-Zu-5sL"/>
+                                    <constraint firstAttribute="width" constant="74" id="pzI-ff-WU5"/>
+                                </constraints>
+                                <state key="normal" title="Find Route"/>
+                                <connections>
+                                    <action selector="backToFirstView:" destination="SdD-a7-hL5" eventType="touchUpInside" id="UD5-c6-M8Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JfD-hr-DEx">
+                                <rect key="frame" x="16" y="140" width="58" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LMI-A6-Zff"/>
+                                    <constraint firstAttribute="width" constant="58" id="TUd-7V-S2C"/>
+                                </constraints>
+                                <state key="normal" title="Go Back"/>
+                                <connections>
+                                    <segue destination="x4s-Qs-9LM" kind="unwind" identifier="goToFirstVC" unwindAction="goToFirstVCWithSegue:" id="4vx-e7-erg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="D33-X5-Tri" firstAttribute="trailing" secondItem="soB-Fi-71V" secondAttribute="trailing" id="74W-RM-xH0"/>
+                            <constraint firstItem="hAo-LN-yrt" firstAttribute="top" secondItem="soB-Fi-71V" secondAttribute="top" id="82b-8D-rro"/>
+                            <constraint firstItem="hAo-LN-yrt" firstAttribute="leading" secondItem="soB-Fi-71V" secondAttribute="leading" id="8gL-X3-Wbh"/>
+                            <constraint firstItem="D33-X5-Tri" firstAttribute="leading" secondItem="soB-Fi-71V" secondAttribute="leading" id="A1P-oI-feT"/>
+                            <constraint firstItem="JfD-hr-DEx" firstAttribute="leading" secondItem="soB-Fi-71V" secondAttribute="leading" constant="16" id="ACp-Mx-Per"/>
+                            <constraint firstItem="JfD-hr-DEx" firstAttribute="top" secondItem="D33-X5-Tri" secondAttribute="bottom" constant="8" id="Eks-cH-PhD"/>
+                            <constraint firstItem="soB-Fi-71V" firstAttribute="trailing" secondItem="ITa-7r-o8M" secondAttribute="trailing" constant="16" id="H5G-Iy-JsH"/>
+                            <constraint firstItem="D33-X5-Tri" firstAttribute="top" secondItem="hAo-LN-yrt" secondAttribute="bottom" id="Jqy-yq-Jpn"/>
+                            <constraint firstItem="ITa-7r-o8M" firstAttribute="top" secondItem="D33-X5-Tri" secondAttribute="bottom" constant="8" id="eNv-yc-7Ll"/>
+                            <constraint firstItem="hAo-LN-yrt" firstAttribute="trailing" secondItem="soB-Fi-71V" secondAttribute="trailing" id="tFr-JX-CHC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="soB-Fi-71V"/>
+                    </view>
+                    <connections>
+                        <outlet property="departureSearchBar" destination="hAo-LN-yrt" id="DUg-Fm-AD7"/>
+                        <outlet property="destinationSearchBar" destination="D33-X5-Tri" id="bWU-Aa-LV9"/>
+                        <segue destination="x4s-Qs-9LM" kind="unwind" identifier="unwindToMainView" unwindAction="unwindToMainWithSegue:" id="JI6-S5-scc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k9M-eO-VmD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="x4s-Qs-9LM" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="84" y="835.23238380809596"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DXV-md-EdN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="f9j-d8-682" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PRu-Jz-WhZ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rLd-zt-7be"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3w9-Dp-Maw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-250" y="118"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="findme" width="256" height="256"/>
+        <image name="gobtn" width="512" height="512"/>
+        <image name="test-1" width="512" height="512"/>
+    </resources>
+</document>
