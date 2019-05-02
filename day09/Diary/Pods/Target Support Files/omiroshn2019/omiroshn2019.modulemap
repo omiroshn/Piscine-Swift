@@ -1,0 +1,6 @@
+framework module omiroshn2019 {
+  umbrella header "omiroshn2019-umbrella.h"
+
+  export *
+  module * { export * }
+}

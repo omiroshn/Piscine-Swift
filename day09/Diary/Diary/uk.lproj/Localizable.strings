@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  Diary
+
+  Created by Lesha Miroshnik on 4/26/19.
+  Copyright © 2019 Lesha Miroshnik. All rights reserved.
+*/
+"Error" = "Помилка";
+"Wrong password" = "Неправильний пароль";
+"Title is empty" = "Заголовок порожній";
+"Content is empty" = "Вміст порожній";
+"Image is empty" = "Нема зображення";
+"Problem with image, sorry" = "Проблема з зображенням";
+"Biometry unavailable" = "Біометрія недоступна";
+"Your device is not configured for biometric authentication." = "Ваш пристрій не налаштований для біометричної автентифікації.";

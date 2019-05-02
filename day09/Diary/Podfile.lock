@@ -1,0 +1,21 @@
+PODS:
+  - omiroshn2019 (1.0.4)
+
+DEPENDENCIES:
+  - omiroshn2019 (from `https://github.com/omiroshn/omiroshn2019.git`)
+
+EXTERNAL SOURCES:
+  omiroshn2019:
+    :git: https://github.com/omiroshn/omiroshn2019.git
+
+CHECKOUT OPTIONS:
+  omiroshn2019:
+    :commit: 8449800814c700e7def575127325a9990ae2bf11
+    :git: https://github.com/omiroshn/omiroshn2019.git
+
+SPEC CHECKSUMS:
+  omiroshn2019: 0f1768e46e44a44810101a7be465eb18a760f39c
+
+PODFILE CHECKSUM: 20841d24ae537bd1ec07c9dd026fbc411270898e
+
+COCOAPODS: 1.6.1

@@ -1,0 +1,45 @@
+
+/* Class = "UILabel"; text = "Date created"; ObjectID = "5kq-PA-MJN"; */
+"5kq-PA-MJN.text" = "Дата создания";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Ldj-ml-Xg7"; */
+"Ldj-ml-Xg7.text" = "Label";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "Pfd-A1-Mvn"; */
+"Pfd-A1-Mvn.text" = "Заголовок";
+
+/* Class = "UILabel"; text = "Date modified"; ObjectID = "V0D-gO-jgf"; */
+"V0D-gO-jgf.text" = "Дата модификации";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "VEu-eb-QOZ"; */
+"VEu-eb-QOZ.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "bJ2-Tx-eid"; */
+"bJ2-Tx-eid.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "eRd-8d-Otz"; */
+"eRd-8d-Otz.normalTitle" = "Логин";
+
+/* Class = "UILabel"; text = "Content"; ObjectID = "eWj-aI-80Q"; */
+"eWj-aI-80Q.text" = "Контент";
+
+/* Class = "UILabel"; text = "Login with Password:"; ObjectID = "h4e-8r-clb"; */
+"h4e-8r-clb.text" = "Введите пароль:";
+
+/* Class = "UITextField"; placeholder = "Enter your title"; ObjectID = "icV-sl-fKS"; */
+"icV-sl-fKS.placeholder" = "Введите название заголовка";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "lSg-dh-ia0"; */
+"lSg-dh-ia0.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Take photo"; ObjectID = "njY-De-wfi"; */
+"njY-De-wfi.normalTitle" = "Сделать фото";
+
+/* Class = "UIButton"; normalTitle = "Login with FaceID"; ObjectID = "ugD-M8-FCA"; */
+"ugD-M8-FCA.normalTitle" = "Войти с помощью FaceID";
+
+/* Class = "UIButton"; normalTitle = "Choose photo"; ObjectID = "yAQ-28-Lb8"; */
+"yAQ-28-Lb8.normalTitle" = "Выбрать фото";
+
+/* Class = "UINavigationItem"; title = "Diary"; ObjectID = "zTQ-df-feR"; */
+"zTQ-df-feR.title" = "Дневник";
